@@ -20,7 +20,12 @@ namespace MyFirstCodeOOP
 
         public override string ToString()
         {
-            return $"------EMPLOYEE------\n\t ID: {Id}\n\t FIRST NAME: {FirstName} \n\t LAST NAME: {LastName} \n\t Hiring Date: {HiringDate} \n\t Is active: {IsActive}";
+            return $"------EMPLOYEE------\n\t" +
+                   $"ID: {Id} \n\t" +
+                   $"FIRST NAME: {FirstName} \n\t" +
+                   $"LAST NAME: {LastName} \n\t" + 
+                   $"Hiring Date: {HiringDate} \n\t" + 
+                   $"Is active: {IsActive}";
         }
         #endregion
     }
