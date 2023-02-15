@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace MyFirstCodeOOP
@@ -8,9 +9,9 @@ namespace MyFirstCodeOOP
     public class Date
     {
         #region Propierties
-        public int _day;
-        public int _month;
-        public int _year;
+        public int _day=00;
+        public int _month=00;
+        public int _year=0000;
         #endregion
 
         #region Constructor
@@ -63,6 +64,7 @@ namespace MyFirstCodeOOP
                 }
             }
             throw new Dayexception("The day is invalid!");
+
         }
 
         private int ValidateMonth(int month)
