@@ -30,13 +30,6 @@ namespace MyFirstCodeOOP
                 Console.WriteLine(ex.Message);
             }
 
-            /*try { 
-            var dateObject = new Date(0, 0, 0);
-            Console.WriteLine(dateObject);
-            /*}catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }*/
         }
     }
 }
