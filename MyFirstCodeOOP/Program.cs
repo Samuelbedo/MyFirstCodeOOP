@@ -13,7 +13,7 @@ namespace MyFirstCodeOOP
             try
             {
 
-                /*#region Date
+                #region Date
                 int year = 0;
                 int month = 0;
                 int day = 0;
@@ -28,7 +28,7 @@ namespace MyFirstCodeOOP
                 var dateObject = new Date(year, month, day);
 
                 Console.WriteLine(dateObject);
-                #endregion*/
+                #endregion
 
                 #region Salary Employee
                 Console.WriteLine("************************");
@@ -65,7 +65,7 @@ namespace MyFirstCodeOOP
                 Console.WriteLine(SalaryEmployee);
                 #endregion
 
-                /*#region Comission Employee
+                #region Comission Employee
                 Console.WriteLine("**************************");
                 Console.WriteLine("TESTING COMISSION EMPLOYEE");
                 Console.WriteLine("**************************");
@@ -102,7 +102,7 @@ namespace MyFirstCodeOOP
                 };
 
                 Console.WriteLine(ComissionEmployee);
-                #endregion*/
+                #endregion
 
                 #region Contractor Employee
                 Console.WriteLine("************************");
@@ -143,6 +143,48 @@ namespace MyFirstCodeOOP
                 Console.WriteLine(ContractorEmployee);
                 #endregion
 
+                #region Base Comission Employee
+                Console.WriteLine("**************************");
+                Console.WriteLine("TESTING BASE & COMISSION EMPLOYEE");
+                Console.WriteLine("**************************");
+
+                Console.WriteLine("Enter your ID: ");
+                id = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter your First name: ");
+                firstname = (Console.ReadLine());
+
+                Console.WriteLine("Enter your Last name: ");
+                lastname = (Console.ReadLine());
+
+                Console.WriteLine("Are you Active?: ");
+                isactive = Convert.ToBoolean(Console.ReadLine());
+
+                Console.WriteLine("Enter your comission percentage: ");
+                comissionPercentage = Convert.ToSingle(Console.ReadLine());
+
+                Console.WriteLine("Enter your sales: ");
+                sales = Convert.ToDecimal(Console.ReadLine());
+
+                Console.WriteLine("Enter your salary base: ");
+                decimal salaryBase= Convert.ToDecimal(Console.ReadLine());
+
+                Employee BaseComissionEmployee = new BaseComissionEmployee()
+                {
+                    Id = id,
+                    FirstName = firstname,
+                    LastName = lastname,
+                    BirthDay = new Date(2002, 10, 26),
+                    HiringDate = new Date(2017, 7, 3),
+                    IsActive = isactive,
+                    ComissionPercentage = comissionPercentage,
+                    Sales = sales,  
+                    Base = salaryBase
+
+                };
+
+                Console.WriteLine(ComissionEmployee);
+                #endregion
             }
 
             catch (Exception ex)
