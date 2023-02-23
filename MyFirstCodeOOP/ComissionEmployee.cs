@@ -22,8 +22,8 @@ namespace MyFirstCodeOOP
         public override string ToString()
         {
             return  $"{base.ToString()}"+ 
-                    $"\n\tCommision Percentage... {ConvertPerentage(ComissionPercentage)}" +
-                    $"\n\t Sales...{Sales:C2}"+
+                    $"\n\tCommision Percentage... {ConvertPerentage(ComissionPercentage):P2}" +
+                    $"\n\t Sales... {Sales:C2}"+
                     $"\n\tValue to pay... {GetValueToPay():C2}";
         }
 
