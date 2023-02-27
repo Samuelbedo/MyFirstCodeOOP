@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MyFirstCodeOOP.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyFirstCodeOOP
 {
-    internal abstract class Employee
+    internal abstract class Employee : IPay 
     {
         #region Variables
         public int Id { get; set; }

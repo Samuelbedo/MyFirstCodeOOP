@@ -187,10 +187,25 @@ namespace MyFirstCodeOOP
                 //Console.WriteLine(ComissionEmployee);
                 #endregion
 
+                #region Invoice 
                 EmployeeHelper employeeHelper = new EmployeeHelper(SalaryEmployee, ComissionEmployee, ContractorEmployee, BaseComissionEmployee);
 
                 Console.WriteLine($"Total payroll.........{employeeHelper.GetPayrollFromActiveEmployees():C2}");
-                
+
+                Console.WriteLine("***********");
+                Console.WriteLine("* INVOICE *");
+                Console.WriteLine("***********");
+
+                Invoice invoice = new Invoice()
+                {
+                    Id = 2012015,
+                    Description = "Iphone 13",
+                    Quantity = 4500000,
+                    Price   = 2,
+                };
+
+                Console.WriteLine(invoice);
+                #endregion
             }
 
             catch (Exception ex)
