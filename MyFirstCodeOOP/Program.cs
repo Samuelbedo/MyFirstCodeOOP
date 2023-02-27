@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFirstCodeOOP.Helper;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
@@ -62,7 +63,7 @@ namespace MyFirstCodeOOP
 
                 };
 
-                Console.WriteLine(SalaryEmployee);
+               //Console.WriteLine(SalaryEmployee);
                 #endregion
 
                 #region Comission Employee
@@ -101,7 +102,7 @@ namespace MyFirstCodeOOP
 
                 };
 
-                Console.WriteLine(ComissionEmployee);
+                //Console.WriteLine(ComissionEmployee);
                 #endregion
 
                 #region Contractor Employee
@@ -140,7 +141,7 @@ namespace MyFirstCodeOOP
 
                 };
 
-                Console.WriteLine(ContractorEmployee);
+                //Console.WriteLine(ContractorEmployee);
                 #endregion
 
                 #region Base Comission Employee
@@ -183,8 +184,13 @@ namespace MyFirstCodeOOP
 
                 };
 
-                Console.WriteLine(ComissionEmployee);
+                //Console.WriteLine(ComissionEmployee);
                 #endregion
+
+                EmployeeHelper employeeHelper = new EmployeeHelper(SalaryEmployee, ComissionEmployee, ContractorEmployee, BaseComissionEmployee);
+
+                Console.WriteLine($"Total payroll.........{employeeHelper.GetPayrollFromActiveEmployees():C2}");
+                
             }
 
             catch (Exception ex)
